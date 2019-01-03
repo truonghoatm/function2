@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reverse Array</title>
+</head>
+<body>
+<script>
+    //var n = parseInt(prompt("Nhap so luong phan tu mang:"));
+    function reserveArray() {
+        var n = parseInt(prompt("Nhap so luong phan tu mang:"));
+        var a =[];
+        for (var i =0; i< n; i++){
+            var x = parseInt(prompt("Nhap phan tu:"));
+            a.push(x);
+        }
+        var b = a.reverse();
+        document.write(b);
+
+    }
+    reserveArray();
+
+
+</script>
+</body>
+</html>

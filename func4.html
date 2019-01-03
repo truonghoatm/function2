@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Character</title>
+</head>
+<body>
+<script>
+    var C =parseInt(prompt("nhap ki tu"));
+    var a = [0,1,2,3,4,5,6,7,8,9];
+    function isNumber(c) {
+        var c;
+        var check = false;
+        for (var i = 0; i <= 9; i++) {
+            if(c === a[i]) {
+                check = true;
+                document.write("Day la ky tu so");
+            }
+        }
+        if(check == false){
+            document.write("Khong phai ky tu so");
+        }
+    }
+    isNumber(C);
+
+</script>
+</body>
+</html>

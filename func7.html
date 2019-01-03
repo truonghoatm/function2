@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Character</title>
+</head>
+<body>
+<script>
+    function checkCharacter() {
+        var c = [];
+        var n = parseInt(prompt("Nhap so luong so ky tu:"));
+        for (var i = 0; i<n; i++) {
+            var x = prompt("Nhap chuoi ky tu:");
+            c.push(x);
+        }
+        var C = prompt("Nhap ky tu bat ky:");
+        var check = false;
+        var count = 0;
+        for (var i = 0; i <c.length; i++){
+            if(C === c[i]){
+                count ++;
+                check=true;
+            }
+        }
+        if(check) {
+            alert(count);
+        }else
+            alert(-1);
+    }
+    checkCharacter();
+</script>
+</body>
+</html>
